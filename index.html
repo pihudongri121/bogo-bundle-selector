@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YAY! It's BOGO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="bogo-container">
+    <!-- Header/title -->
+    <header class="bogo-header">
+      <h1><span>YAY! It’s BOGO</span></h1>
+    </header>
+
+    <form class="bogo-form" id="bogoForm" autocomplete="off">
+      <!-- Bundle: 1 Unit -->
+      <section class="bogo-box" data-bundle="1">
+        <label class="bogo-radio-label">
+          <input type="radio" name="bundle" value="1" checked>
+          <span class="bogo-title">1 Unit</span>
+          <span class="bogo-badge">10% Off</span>
+          <span class="bogo-price">$10.00 USD</span>
+        </label>
+        <div class="bogo-desc">Standard Price</div>
+        <div class="bogo-old-price">$24.00 USD</div>
+        <!-- Expandable options -->
+        <div class="bogo-options"></div>
+      </section>
+
+      <!-- Bundle: 2 Units (Most Popular) -->
+      <section class="bogo-box popular" data-bundle="2">
+        <div class="bogo-most-popular">MOST POPULAR</div>
+        <label class="bogo-radio-label">
+          <input type="radio" name="bundle" value="2">
+          <span class="bogo-title">2 Unit</span>
+          <span class="bogo-badge">20% Off</span>
+          <span class="bogo-price">$18.00 USD</span>
+        </label>
+        <div class="bogo-desc">&nbsp;</div>
+        <div class="bogo-old-price">$24.00 USD</div>
+        <!-- Expandable options -->
+        <div class="bogo-options">
+          <!-- To be filled by JS on expand -->
+        </div>
+      </section>
+
+      <!-- Bundle: 3 Units -->
+      <section class="bogo-box" data-bundle="3">
+        <label class="bogo-radio-label">
+          <input type="radio" name="bundle" value="3">
+          <span class="bogo-title">3 Unit</span>
+          <span class="bogo-badge">30% Off</span>
+          <span class="bogo-price">$24.00 USD</span>
+        </label>
+        <div class="bogo-desc">&nbsp;</div>
+        <div class="bogo-old-price">$24.00 USD</div>
+        <!-- Expandable options -->
+        <div class="bogo-options"></div>
+      </section>
+
+      <!-- Free Delivery announcement -->
+      <div class="bogo-delivery">Free Delivery</div>
+
+      <!-- Cart summary & button -->
+      <div class="bogo-summary">
+        <span class="bogo-total-label">Total :</span>
+        <span class="bogo-total-amount">$18.00 USD</span>
+      </div>
+      <button type="submit" class="bogo-cart-btn">+ Add to Cart</button>
+    </form>
+
+    <footer class="bogo-footer">
+      <span class="bogo-powered">@ Powered by Pumper</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
